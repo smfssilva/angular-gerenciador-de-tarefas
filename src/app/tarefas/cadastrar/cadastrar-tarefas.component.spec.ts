@@ -14,12 +14,12 @@ describe('CadastrarTarefasComponent', () => {
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(CadastrarTarefasComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
+    // fixture = TestBed.createComponent(CadastrarTarefasComponent);
+    // component = fixture.componentInstance;
+    // fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+  // it('should create', () => {
+  //   expect(component).toBeTruthy();
+  // });
 });
