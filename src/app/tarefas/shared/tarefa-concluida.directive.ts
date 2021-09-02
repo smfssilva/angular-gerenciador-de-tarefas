@@ -1,10 +1,18 @@
-import { Directive } from '@angular/core';
+import { Directive, Input, ElementRef } from '@angular/core';
 
 @Directive({
-  selector: '[appTarefaConcluida]'
+  selector: '[tarefaConcluida]'
 })
 export class TarefaConcluidaDirective {
 
-  constructor() { }
+  @Input() tarefaConcluida: boolean;
+
+  constructor(private el: ElementRef) { }
+
+  ngOnInit(){
+    if (this.tarefaConcluida) {
+      this.el.nativeElement.style.textDecoration = "line-through";
+    }
+  }
 
 }

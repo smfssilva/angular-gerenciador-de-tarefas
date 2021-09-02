@@ -14,7 +14,9 @@
   </thead>
   <tbody>
     <tr *ngFor="let tarefa of tarefas">
-      <td [class.bg-success]="!tarefa.concluida">
+      <td
+      [tarefaConcluida]="tarefa.concluida"
+      [class.bg-success]="!tarefa.concluida">
 
         {{tarefa.nome}}
 
